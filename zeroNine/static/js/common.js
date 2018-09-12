@@ -12,6 +12,12 @@ $(".img").mouseleave(
   
 $("#logo_img").click(
     function () {
-      location.replace('main.html');
+      location.replace('main');
     }
 );
+
+$("#loginbtn").click(
+    function(){
+      location.replace('login');
+    }
+)

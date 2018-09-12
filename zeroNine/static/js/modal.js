@@ -6,12 +6,12 @@ $(".btn,#btn-close-dialog").click(
 
 $('.apply').click(
   function() { 
-    location.replace('apply.html');
+    location.replace('apply');
   }
 );
 
 $('.cancel').click(
   function() { 
-    location.replace('cancel.html');
+    location.replace('cancel');
   }
 );

@@ -14,5 +14,5 @@ $('#input-btn').click(
             alert("감사합니다!");
         }
 
-        location.replace('main.html');
+        location.replace('main');
 }); 
