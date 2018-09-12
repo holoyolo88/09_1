@@ -5,11 +5,13 @@
         <meta charset="utf-8"/>
         <title>09</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="{% static '../css/nav.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static '../login.png %}">
+        <link rel="stylesheet" href="{% static 'css/login.cs' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/cancel.css' %}">
     </head>
+
     <body>
-    <div class="top-nav">
+        <div class="top-nav">
             <div class="search-container">
                 <form action="/" method="post">
                     <input type="text" placeholder="Search..." name="search">
@@ -33,7 +35,7 @@
                 </div>
             </div>
             <a id="logo_img" href="#">
-                <img src="../img/logo.png" border="0"/>
+                <img src="{% static 'img/logo.png' %}" border="0"/>
             </a>
             <div class="catagory">
                     <button class="cat-btn">로그인</button>
@@ -50,20 +52,38 @@
                     </div>
             </div>
         </div>
-        
-        <div class="wrap">
-            <div class="login">
-                <form action="/User/login/" method="post">
-                    {% csrf_token %}
-                    <input type="text" placeholder="id" name="id"/>
-                    <br>
-                    <input type="password" placeholder="password" name="password"/>
-                    <br>
-                    <button type="submit">login</button>
-                </form>
+
+        <img src="{% static 'img/shinee10.jpg' %}" class="img">
+
+        <div class="input-info">
+            <div class="ca">취소하기</div>
+            <a href="" class="product-name">박예린</a>
+            <div class="price">1000원</div>
+            <div class="depositor-name"> 
+                입금자명 : <input type="text" name="depositor-name" style="height: 20px; width: 200px; ">
             </div>
+            <div class="depositor-status">
+                입금여부 : <input type="checkbox" name="depositor-status" style="height: 20px; width: 20px;">
+            </div>
+            <div class="description-1">*입금하지 않았을 경우 체크하지마세요</div>
+            <div class="description-2">*불가피한 상황을 대비해 주문자에게 연락 남겨주시기 바랍니다.</div>
         </div>
+    
+        <div class="note">
+            <div class="representative-order">
+                <div class="representative-order-t">대표주문자</div>
+                <div class="representative-order-info">1학년 2반 김다은</div>
+                <div class="representative-order-fb">
+                    <a href="">www.facebook.com/박예린</a>
+                </div>
+            </div>
+
+            <input type="button" value="취소하기" class="submit">
+        </div>
+    
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src='../js/common.js'></script>
+        <script src="{% static 'js/cancel.js' %}"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="{% static 'js/common.js' %}"></script>
     </body>
 </html>

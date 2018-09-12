@@ -1,14 +1,16 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8"/>
         <title>09</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../css/login.css">
-        <link rel="stylesheet" type="text/css" href="../css/nav.css">
-        <link rel="stylesheet" type="text/css" href="../css/productpage-db.css">
-        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/productpage-db.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
     </head>
+
     <body>
         <div class="top-nav">
             <div class="search-container">
@@ -34,7 +36,7 @@
                 </div>
             </div>
             <a id="logo_img" href="#">
-                <img src="../img/logo.png" border="0"/>
+                <img src="{% static 'img/logo.png' %}" border="0"/>
             </a>
             <div class="catagory">
                     <button class="cat-btn">로그인</button>
@@ -57,20 +59,20 @@
         <hr class="line">
         
         <div id="wrapper">
-            <button class="btn"><img class="img" src="../img/shinee1.jpg"></button>
-            <button class="btn"><img class="img" src="../img/shinee2.jpg"></button>
-            <button class="btn"><img class="img" src="../img/shinee3.jpg"></button>
-            <button class="btn"><img class="img" src="../img/shinee4.jpg"></button>
-            <button class="btn"><img class="img" src="../img/shinee5.jpg"></button>
-            <button class="btn"><img class="img" src="../img/shinee6.jpg"></button>
-            <button class="btn"><img class="img" src="../img/shinee7.jpg"></button>
-            <button class="btn"><img class="img" src="../img/shinee8.jpg"></button>
-            <button class="btn"><img class="img" src="../img/shinee9.jpg"></button>
-            <button class="btn"><img class="img" src="../img/shinee10.jpg"></button>
+            <button class="btn"><img class="img" src="{% static 'img/shinee1.jpg' %}"></button>
+            <button class="btn"><img class="img" src="{% static 'img/shinee2.jpg' %}"></button>
+            <button class="btn"><img class="img" src="{% static 'img/shinee3.jpg' %}"></button>
+            <button class="btn"><img class="img" src="{% static 'img/shinee4.jpg' %}"></button>
+            <button class="btn"><img class="img" src="{% static 'img/shinee5.jpg' %}"></button>
+            <button class="btn"><img class="img" src="{% static 'img/shinee6.jpg' %}"></button>
+            <button class="btn"><img class="img" src="{% static 'img/shinee7.jpg' %}"></button>
+            <button class="btn"><img class="img" src="{% static 'img/shinee8.jpg' %}"></button>
+            <button class="btn"><img class="img" src="{% static 'img/shinee9.jpg' %}"></button>
+            <button class="btn"><img class="img" src="{% static 'img/shinee10.jpg' %}"></button>
         </div>
 
         <div id="my-dialog">
-            <img class="dialog-img" src="../../../../다운로드.jpg">
+            <img class="dialog-img" src="{% static 'img/images.jpg' %}">
             <div class="product-name">아마존</div>
             <div class="representative-order" style="top: calc( 50% - 100px );">
                 대표주문자
@@ -94,9 +96,9 @@
         <div id="dialog-background"></div>
 
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src='../js/modal.js'></script>
+        <script src="{% static 'js/modal.js' %}"></script>
         
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src='../js/common.js'></script>
+        <script src="{% static 'js/common.js' %}"></script>
     </body>
 </html>

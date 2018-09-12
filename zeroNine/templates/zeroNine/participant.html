@@ -1,12 +1,14 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8"/>
         <title>09</title>
+        <link rel="stylesheet" href="//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../css/login.css">
-        <link rel="stylesheet" type="text/css" href="../css/nav.css">
-        <link rel="stylesheet" type="text/css" href="../css/cancel.css">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/participant.css' %}">
     </head>
     <body>
         <div class="top-nav">
@@ -33,7 +35,7 @@
                 </div>
             </div>
             <a id="logo_img" href="#">
-                <img src="../img/logo.png" border="0"/>
+                <img src="{% static 'img/logo.png' %}" border="0"/>
             </a>
             <div class="catagory">
                     <button class="cat-btn">로그인</button>
@@ -50,38 +52,36 @@
                     </div>
             </div>
         </div>
-
-        <img src="../img/shinee10.jpg" class="img">
-
-        <div class="input-info">
-            <div class="ca">취소하기</div>
-            <a href="" class="product-name">박예린</a>
-            <div class="price">1000원</div>
-            <div class="depositor-name"> 
-                입금자명 : <input type="text" name="depositor-name" style="height: 20px; width: 200px; ">
+        
+        <div class="participant">
+            <div class="participant-info">
+                공구참여자정보
             </div>
-            <div class="depositor-status">
-                입금여부 : <input type="checkbox" name="depositor-status" style="height: 20px; width: 20px;">
+        
+            <div class="participant-product">
+                공구에 참여한 상품
             </div>
-            <div class="description-1">*입금하지 않았을 경우 체크하지마세요</div>
-            <div class="description-2">*불가피한 상황을 대비해 주문자에게 연락 남겨주시기 바랍니다.</div>
+                        
+            <div class="wrapper-btn">
+                <figure>
+                    <button class="btn"><img class="img" src="{% static 'img/shinee8.jpg' %}"></button>
+                    <figcaption>데리러가 샤이니</figcaption>
+                </figure>
+
+                <figure>
+                    <button class="btn"><img class="img" src="{% static 'img/shinee9.jpg' %}"></button>
+                    <figcaption>꼭갈콘 샤이니</figcaption>
+                </figure>
+
+                <figure>
+                    <button class="btn"><img class="img" src="{% static 'img/shinee10.jpg' %}"></button> 
+                    <figcaption>뷰 샤이니</figcaption>
+                </figure>
+            </div>
         </div>
-    
-        <div class="note">
-            <div class="representative-order">
-                <div class="representative-order-t">대표주문자</div>
-                <div class="representative-order-info">1학년 2반 김다은</div>
-                <div class="representative-order-fb">
-                    <a href="">www.facebook.com/박예린</a>
-                </div>
-            </div>
-
-            <input type="button" value="취소하기" class="submit">
-        </div>
-    
+        
+        
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src='../js/cancel.js'></script>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src='../js/common.js'></script>
+        <script src="{% static 'js/common.js' %}"></script>
     </body>
 </html>

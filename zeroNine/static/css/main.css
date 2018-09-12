@@ -1,3 +1,4 @@
+/*상품이미지버튼*/
 .btn{
     background-color: rgba( 255, 255, 255, 0.5 );
     border-radius: 50%;
@@ -7,6 +8,7 @@
     
 }
 
+/*상품이미지*/
 .img{
     border-radius: 50%;
     width:250px;
@@ -15,6 +17,7 @@
     z-index: 1;   
 }
 
+/*상품그리드 공통*/
 .wrapper{
     display: grid;
     grid-template-columns: 250px 250px;
@@ -23,6 +26,7 @@
     grid-row-gap: 2em;
 }
 
+/*bestitem*/
 .wrap1{
     position: relative;
     display: inline-block;
@@ -32,15 +36,17 @@
     height: calc(500px + 2em);
 }
 
+/*hurryup*/
 .wrap2{
     position: relative;
     display: inline-block;
     top: 10px;
-    left: 130px;
+    right: -125px;
     width: calc(500px + 4em);
     height: calc(500px + 2em);
 }
 
+/*bestitem글자*/
 .BEST{
     color: black;
     font-size: 35px;
@@ -50,6 +56,7 @@
     left: 200px;
 }
 
+/*hurryrp글자*/
 .HURRY{
     color: black;
     font-size: 35px;
