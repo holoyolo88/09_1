@@ -1,0 +1,69 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>09</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static '../css/nav.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static '../login.png %}">
+    </head>
+    <body>
+    <div class="top-nav">
+            <div class="search-container">
+                <form action="/" method="post">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="catagory">
+                <button class="cat-btn">Catagory</button>
+                <div class="cat-cnt">
+                    <a href="productpage.html">옷</a>
+                    <a href="#">악세사리</a>
+                    <a href="#">식품</a>
+                    <a href="#">전자제품</a>
+                    <a href="#">도서</a>
+                    <a href="productpage-db.html">직구</a>
+                    <a href="#">기타</a>
+                    <a href="registration.html">공구등록</a>
+                    <a href="#">문의사항</a>
+                </div>
+            </div>
+            <a id="logo_img" href="#">
+                <img src="../img/logo.png" border="0"/>
+            </a>
+            <div class="catagory">
+                    <button class="cat-btn">로그인</button>
+            </div>
+            <div class="catagory">
+                    <button class="cat-btn">회원가입</button>
+            </div>
+            <div class="catagory">
+                    <button class="cat-btn">내 정보</button>
+                    <div class="cat-cnt">
+                        <a href="order.html">주문자</a>
+                        <a href="participant.html">공구참여자</a>
+                        <a href="#">로그아웃</a>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="wrap">
+            <div class="login">
+                <form action="/User/login/" method="post">
+                    {% csrf_token %}
+                    <input type="text" placeholder="id" name="id"/>
+                    <br>
+                    <input type="password" placeholder="password" name="password"/>
+                    <br>
+                    <button type="submit">login</button>
+                </form>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src='../js/common.js'></script>
+    </body>
+</html>

@@ -9,13 +9,12 @@ class User(models.Model):
     name = models.CharField(max_length=32)
 
 class Category(models.Model):
-    name = models.CharField(max_length=64, primary_key=True)
+    category = models.CharField(max_length=64, primary_key=True)
 
 # null허용 여부와 blank 허용 옵션의 디폴트 값은 False
 class Product(models.Model):
-    idx = models.AutoField(primary_key=True)
-    #catagory = models.CharField(max_length=64)
-    catagory=models.ForeignKey('Category',on_delete = models.CASCADE)
+    userid = models.ForeignKey('User', on_delete = models.CASCADE)
+    category=models.ForeignKey('Category',on_delete = models.CASCADE)
     name = models.CharField(max_length=64)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
@@ -28,7 +27,6 @@ class Product(models.Model):
     price = models.IntegerField()
     direct = models.IntegerField()
 
-    
     
 class Product_has_User(models.Model):
     order_date = models.IntegerField()

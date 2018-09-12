@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>09</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" type="text/css" href="../css/nav.css">
+        <link rel="stylesheet" type="text/css" href="../css/apply.css">
+    </head>
+    <body>
+        <div class="top-nav">
+            <div class="search-container">
+                <form action="/" method="post">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="catagory">
+                <button class="cat-btn">Catagory</button>
+                <div class="cat-cnt">
+                    <a href="productpage.html">옷</a>
+                    <a href="#">악세사리</a>
+                    <a href="#">식품</a>
+                    <a href="#">전자제품</a>
+                    <a href="#">도서</a>
+                    <a href="productpage-db.html">직구</a>
+                    <a href="#">기타</a>
+                    <a href="registration.html">공구등록</a>
+                    <a href="#">문의사항</a>
+                </div>
+            </div>
+            <a id="logo_img" href="#">
+                <img src="../img/logo.png" border="0"/>
+            </a>
+            <div class="catagory">
+                    <button class="cat-btn">로그인</button>
+            </div>
+            <div class="catagory">
+                    <button class="cat-btn">회원가입</button>
+            </div>
+            <div class="catagory">
+                    <button class="cat-btn">내 정보</button>
+                    <div class="cat-cnt">
+                        <a href="order.html">주문자</a>
+                        <a href="participant.html">공구참여자</a>
+                        <a href="#">로그아웃</a>
+                    </div>
+            </div>
+        </div>
+
+        <img src="../img/shinee10.jpg" class="img">
+
+        <div class="input-info">
+            <div class="ap">공구참여하기</div>
+            <a href="" class="product-name">박예린</a>
+            <div class="price">1000원</div>
+            <div class="depositor-name"> 
+                입금자명 : <input type="text" name="depositor-name" style="height: 20px; width: 200px; ">
+            </div>
+            <!-- 나중에 jquery plugin 캘린더로 대체-->
+            <div class="depositor-period">
+                입금기간 : <input type="date" name="depositor-period" style="height: 20px; width: 200px;">
+            </div>
+            <div class="description-1">*현금이 가능할경우 작성한 입금기간 내 현금으로 직접 주셔도 됩니다</div>
+            <div class="option">
+                상품옵션 : <input type="text" name="option" style="height: 20px; width: 200px;">
+            </div>
+            <div class="description-2">* 수량, 색상, 맛, 사이즈 등 상세하게 적어주세요.</div>
+        </div>
+    
+        <div class="note">
+            <div class="representative-order">
+                <div class="representative-order-t">대표주문자</div>
+                <div class="representative-order-info">1학년 2반 김다은</div>
+                <div class="representative-order-fb">
+                    <a href="">www.facebook.com/박예린</a>
+                </div>
+            </div>
+
+            <div class="notice">
+                <div class="notice-t">공지사항</div>
+                <div class="notice-info">
+                    5월 30일 주문예정입니다.<br>                   
+                    최소 5명 주문 시 주문가능합니다.<br>
+                    계좌이체 또는 직접 현금으로 주셔도 무관합니다.<br> 
+                </div>
+            </div>
+
+            <div class="account-number">
+                <div class="account-number-t">계좌번호</div>
+                <div class="account-number-info">123-4567-8910</div>
+            </div>
+
+            <input type="button" value="신청하기" class="submit">
+        </div>
+
+        <div id="apply-modal">
+            <div class="apply-text">신청하긔</div>
+            <div class="password">비밀번호</div>
+            <div class="password-input"><input type="text" style="width: 250px; height: 25px;"></div>
+            <div class="input"><button id="input-btn">입력</button></div>
+            <close class="close" id="btn-close-dialog">&times;</close>
+        </div>
+        
+        <div id="dialog-background"></div>
+    
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src='../js/apply-modal.js'></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src='../js/common.js'></script>
+    </body>
+</html>

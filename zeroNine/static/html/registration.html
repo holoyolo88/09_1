@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>09</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" type="text/css" href="../css/nav.css">
+        <link rel="stylesheet" type="text/css" href="../css/registration.css">
+    </head>
+    <body>
+        <div class="top-nav">
+            <div class="search-container">
+                <form action="/" method="post">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="catagory">
+                <button class="cat-btn">Catagory</button>
+                <div class="cat-cnt">
+                    <a href="productpage.html">옷</a>
+                    <a href="#">악세사리</a>
+                    <a href="#">식품</a>
+                    <a href="#">전자제품</a>
+                    <a href="#">도서</a>
+                    <a href="productpage-db.html">직구</a>
+                    <a href="#">기타</a>
+                    <a href="registration.html">공구등록</a>
+                    <a href="#">문의사항</a>
+                </div>
+            </div>
+            <a id="logo_img" href="#">
+                <img src="../img/logo.png" border="0"/>
+            </a>
+            <div class="catagory">
+                    <button class="cat-btn">로그인</button>
+            </div>
+            <div class="catagory">
+                    <button class="cat-btn">회원가입</button>
+            </div>
+            <div class="catagory">
+                    <button class="cat-btn">내 정보</button>
+                    <div class="cat-cnt">
+                        <a href="order.html">주문자</a>
+                        <a href="participant.html">공구참여자</a>
+                        <a href="#">로그아웃</a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="input-img">
+            <button class="addimg">&#43;</button>
+            <input type="file" class="upload">
+        </div>
+        
+        <div class="input-info">
+            <legend class="re">공구등록하기</legend>
+
+            <ul>
+                <li>
+                    <label for="input-text">상품이름</label>
+                    <input type="text" name="product-name" class="input-text" >
+                </li>
+                <li>
+                    <label for="input-text">상품링크</label>
+                    <input type="url" name="product-link"  placeholder="상품링크를 복붙해주세요" class="input-text">
+                </li>
+                <li>
+                    <label for="input-text">상품가격</label>
+                    <input type="text" name="product-price" class="input-text">
+                </li>
+                <li>
+                    <label for="input-text">마감날짜</label>
+                    <input type="date" name="product-period" class="input-text">
+                </li>
+                <li>
+                    <label for="input-text">구매최소인원</label>
+                    <input type="number" name="minimum">
+                </li>
+                <li>
+                    <label for="input-text">주문자정보</label>
+                    <input type="text" name="option" placeholder="학번,이름" class="input-text"><br>
+                    <input type="url" name="option" placeholder="페이스북 주소" class="input-text">
+                </li>
+                <li>
+                    <label class="notice" for="notice">공지사항</label>
+                    <textarea class="notice-in" style="float: right;" ></textarea>
+                </li>
+            </ul>
+            <div class="description">*입금방법(계좌이체/직접수령)등 상세하게 적어주세요</div>
+        </div>
+    
+        <div class="cat-choice">
+            <div class="cat-t">카테고리</div>
+            <input type="radio" name="cat-ch"> 옷<br>
+            <input type="radio" name="cat-ch"> 악세사리<br>
+            <input type="radio" name="cat-ch"> 식품<br>
+            <input type="radio" name="cat-ch"> 전자제품<br>
+            <input type="radio" name="cat-ch"> 도서<br>
+            <input type="radio" name="cat-ch"> 기타<br>
+            <input type="button" value="등록하기" class="submit">
+        </div>
+
+        <div id="apply-modal">
+            <div class="apply-text">등록하기</div>
+            <div class="password">비밀번호</div>
+            <div class="password-input"><input type="text" style="width: 250px; height: 25px;"></div>
+            <div class="input"><button id="input-btn">입력</button></div>
+            <close class="close" id="btn-close-dialog">&times;</close>
+        </div>
+        
+        <div id="dialog-background"></div>
+    
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src='../js/apply-modal.js'></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src='../js/common.js'></script>
+    </body>
+</html>

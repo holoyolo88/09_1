@@ -1,0 +1,60 @@
+.btn{
+    background-color: rgba( 255, 255, 255, 0.5 );
+    border-radius: 50%;
+    border: 0;
+    width: 250px;
+    height: 250px;
+    
+}
+
+.img{
+    border-radius: 50%;
+    width:250px;
+    height:250px;
+    border:2px solid black;
+    z-index: 1;   
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px;
+    grid-column-gap: 4em;
+    grid-row-gap: 2em;
+}
+
+.wrap1{
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    left: 80px;
+    width: calc(500px + 4em);
+    height: calc(500px + 2em);
+}
+
+.wrap2{
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    left: 130px;
+    width: calc(500px + 4em);
+    height: calc(500px + 2em);
+}
+
+.BEST{
+    color: black;
+    font-size: 35px;
+    font-weight: bolder;
+    position: relative;
+    top: -285px;
+    left: 200px;
+}
+
+.HURRY{
+    color: black;
+    font-size: 35px;
+    font-weight: bolder;
+    position: relative;
+    top: -285px;
+    left: 200px;
+}

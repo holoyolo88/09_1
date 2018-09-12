@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>09</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" type="text/css" href="../css/nav.css">
+        <link rel="stylesheet" type="text/css" href="../css/cancel.css">
+    </head>
+    <body>
+        <div class="top-nav">
+            <div class="search-container">
+                <form action="/" method="post">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="catagory">
+                <button class="cat-btn">Catagory</button>
+                <div class="cat-cnt">
+                    <a href="productpage.html">옷</a>
+                    <a href="#">악세사리</a>
+                    <a href="#">식품</a>
+                    <a href="#">전자제품</a>
+                    <a href="#">도서</a>
+                    <a href="productpage-db.html">직구</a>
+                    <a href="#">기타</a>
+                    <a href="registration.html">공구등록</a>
+                    <a href="#">문의사항</a>
+                </div>
+            </div>
+            <a id="logo_img" href="#">
+                <img src="../img/logo.png" border="0"/>
+            </a>
+            <div class="catagory">
+                    <button class="cat-btn">로그인</button>
+            </div>
+            <div class="catagory">
+                    <button class="cat-btn">회원가입</button>
+            </div>
+            <div class="catagory">
+                    <button class="cat-btn">내 정보</button>
+                    <div class="cat-cnt">
+                        <a href="order.html">주문자</a>
+                        <a href="participant.html">공구참여자</a>
+                        <a href="#">로그아웃</a>
+                    </div>
+            </div>
+        </div>
+
+        <img src="../img/shinee10.jpg" class="img">
+
+        <div class="input-info">
+            <div class="ca">취소하기</div>
+            <a href="" class="product-name">박예린</a>
+            <div class="price">1000원</div>
+            <div class="depositor-name"> 
+                입금자명 : <input type="text" name="depositor-name" style="height: 20px; width: 200px; ">
+            </div>
+            <div class="depositor-status">
+                입금여부 : <input type="checkbox" name="depositor-status" style="height: 20px; width: 20px;">
+            </div>
+            <div class="description-1">*입금하지 않았을 경우 체크하지마세요</div>
+            <div class="description-2">*불가피한 상황을 대비해 주문자에게 연락 남겨주시기 바랍니다.</div>
+        </div>
+    
+        <div class="note">
+            <div class="representative-order">
+                <div class="representative-order-t">대표주문자</div>
+                <div class="representative-order-info">1학년 2반 김다은</div>
+                <div class="representative-order-fb">
+                    <a href="">www.facebook.com/박예린</a>
+                </div>
+            </div>
+
+            <input type="button" value="취소하기" class="submit">
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src='../js/cancel.js'></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src='../js/common.js'></script>
+    </body>
+</html>

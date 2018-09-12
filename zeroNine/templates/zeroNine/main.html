@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>09</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--link rel="stylesheet" href="../css/login.css"-->
+        <!--link rel="stylesheet" type="text/css" href="../css/nav.css"-->
+        <!--link rel="stylesheet" type="text/css" href="../css/main.css"-->
+        <!--link rel="stylesheet" href="../css/common.css"-->
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    </head>
+    <body>
+        <div class="top-nav">
+            <div class="search-container">
+                <form action="/" method="post">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="catagory">
+                <button class="cat-btn">Catagory</button>
+                <div class="cat-cnt">
+                    <a href="productpage.html">옷</a>
+                    <a href="#">악세사리</a>
+                    <a href="#">식품</a>
+                    <a href="#">전자제품</a>
+                    <a href="#">도서</a>
+                    <a href="productpage-db.html">직구</a>
+                    <a href="#">기타</a>
+                    <a href="registration.html">공구등록</a>
+                    <a href="#">문의사항</a>
+                </div>
+            </div>
+            <a id="logo_img" href="#">
+                <img src="{% static 'img/logo.png'%}" border="0"/>
+            </a>
+            <div class="catagory">
+                    <button class="cat-btn">로그인</button>
+            </div>
+            <div class="catagory">
+                    <button class="cat-btn">회원가입</button>
+            </div>
+            <div class="catagory">
+                    <button class="cat-btn">내 정보</button>
+                    <div class="cat-cnt">
+                        <a href="order.html">주문자</a>
+                        <a href="participant.html">공구참여자</a>
+                        <a href="#">로그아웃</a>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="wrap1">
+            <div class="wrapper">
+                <button class="btn">
+                    <img class="img" src="../img/shinee1.jpg">
+                    <div class="content">
+                        박예린</br>
+                        1000원</br>
+                    </div>
+                </button>
+
+                <button class="btn">
+                    <img class="img" src="../img/shinee2.jpg">
+                    <div class="content">
+                        박예린</br>
+                        1000원</br>
+                    </div>
+                </button>
+
+                <button class="btn">
+                    <img class="img" src="../img/shinee3.jpg">
+                    <span class="content">
+                            박예린</br>
+                            1000원</br>
+                    </span>
+                </button>
+
+                <button class="btn">
+                    <img class="img" src="../img/shinee4.jpg">
+                    <div class="content">
+                        박예린</br>
+                        1000원</br>
+                    </div>
+                </button>
+            </div>
+            
+            <div class="BEST">BEST ITEM</div>
+        </div>
+
+        <div class="wrap2">    
+            <div class="wrapper">
+                <button class="btn">
+                    <img class="img" src="../img/shinee5.jpg">
+                    <div class="content">
+                            박예린</br>
+                            1000원</br>
+                    </div>
+                </button>
+
+                <button class="btn">
+                    <img class="img" src="../img/shinee6.jpg">
+                    <div class="content">
+                            박예린</br>
+                            1000원</br>
+                    </div>
+                </button>
+
+                <button class="btn">
+                    <img class="img" src="../img/shinee7.jpg">
+                    <div class="content">
+                            박예린</br>
+                            1000원</br>
+                    </div>
+                </button>
+
+                <button class="btn">
+                    <img class="img" src="../img/shinee8.jpg">
+                    <div class="content">
+                            박예린</br>
+                            1000원</br>
+                    </div>
+                </button>
+            </div>
+            
+            <div class="HURRY">HURRY UP!</div>
+        </div>
+
+        <div id="my-dialog">
+            <img class="dialog-img" src="../../../../다운로드.jpg">
+            <div class="product-name">박예린</div>
+            <div class="price">1000원</div>
+            <div class="representative-order">대표주문자
+                <div class="representative-order-info">1학년 2반 김다은</div>
+                <div class="representative-order-fb">www.facebook.com/박예린</div>
+            </div>
+
+            <div class="notice">공지사항
+                <div class="notice-info">
+                    5월 30일 주문예정입니다.</br>                   
+                    최소 5명 주문 시 주문가능합니다.</br>
+                    계좌이체 또는 직접 현금으로 주셔도 무관합니다.</br>
+                </div>
+            </div>
+            <button class="apply">공구참여하기</button>
+            <button class="cancel">취소하기</button>
+            <close class="close" id="btn-close-dialog">&times;</close>
+        </div>
+    
+        <div id="dialog-background"></div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src='../js/modal.js'></script>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src='../js/common.js'></script>
+    </body>
+</html>

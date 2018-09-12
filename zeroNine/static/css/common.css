@@ -1,0 +1,129 @@
+.close{
+    cursor: pointer;
+    font-size: 70px;
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    right: calc( 50% - 400px ); top: calc( 50% - 280px );
+}
+
+.dialog-img{
+    cursor: pointer;
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+    border:2px solid black;
+    position: absolute;
+    left: calc( 50% - 350px ); top: calc( 50% - 200px );
+}
+
+.product-name{
+    font-size: 35px;
+    font-weight: 600;
+    position: absolute;
+    left: calc( 50% - 80px ); top: calc( 50% - 200px );
+    border-bottom: 2px solid currentColor;
+}
+
+.price{
+    font-size: 25px;
+    font-weight: normal;
+    position: absolute;
+    left: calc( 50% - 80px ); top: calc( 50% - 120px );
+}
+
+.representative-order{
+    font-size: 16px;
+    font-weight: bolder;
+    position: absolute;
+    left: calc( 50% - 80px ); top: calc( 50% - 60px );
+}
+
+.representative-order-info{
+    font-size: 14px;
+    font-weight: 200;
+    position: relative;
+    left: 100px; bottom: 18px;
+}
+
+.representative-order-fb{
+    font-size: 14px;
+    font-weight: 200;
+    position: relative;
+    left: 100px; bottom: 17px;
+}
+
+.notice{
+    font-size: 16px;
+    font-weight: bolder;
+    position: absolute;
+    left: calc( 50% - 80px ); top: calc( 50% );
+}
+
+.notice-info{
+    font-size: 14px;
+    font-weight: 200;
+    position: relative;
+    left: 100px; bottom: 18px;
+    line-height: 20px;
+}
+
+.apply{
+    font-size: 30px;
+    font-weight: lighter;
+    background-color: rgba( 255, 255, 255, 0.5 );
+    border:0;
+    outline: 0;
+    position: absolute;
+    left: calc( 50% - 250px ); top: calc( 50% + 150px );
+}
+
+.cancel{
+    font-size: 30px;
+    font-weight: lighter;
+    background-color: rgba( 255, 255, 255, 0.5 );
+    border:0;
+    outline: 0;
+    position: absolute;
+    right: calc( 50% - 250px ); top: calc( 50% + 150px );
+}
+
+#dialog-background {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,.3);
+    z-index: 10;
+}
+
+#my-dialog {
+    display: none;
+    position: fixed;
+    left: calc( 50% - 400px ); top: calc( 50% - 250px );
+    width: 800px; height: 500px; 
+    background: #fff;
+    z-index: 11;
+    padding: 10px;
+    border-radius : 20px;
+}
+
+.darkness {
+    background-color: black;
+    opacity: 0.4;
+}
+
+.btn .content {
+    visibility: hidden;
+    margin:auto;
+    font-size: 30px;
+}
+
+.img:hover + .content{
+    visibility: visible;
+    z-index: 2;
+}
+
+body {
+    font-family: 'Nanum Square';
+}
