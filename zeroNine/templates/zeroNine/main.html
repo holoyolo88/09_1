@@ -58,108 +58,64 @@
 
     <div class="wrap1">
         <div class="wrapper">
+            {% for product in products %}
             <button class="btn">
-                <img class="img" src="{% static 'img/shinee1.jpg' %}">
+                <img class="img" src="{{product.img_path }}">
                 <div class="content">
-                    <p>{{products.productName}}</p></br>
-                    {{products.price}}</br>
+                    {{product.productName}}</br>
+                    {{product.price}}</br>
                 </div>
             </button>
-
-            <button class="btn">
-                <img class="img" src="{% static 'img/shinee2.jpg' %}">
-                <div class="content">
-                    {{products.productName}}</br>
-                    {{products.price}}</br>
-                </div>
-            </button>
-
-            <button class="btn">
-                <img class="img" src="{% static 'img/shinee3.jpg' %}">
-                <span class="content">
-                    {{products.productName}}</br>
-                    {{products.price}}</br>
-                </span>
-            </button>
-
-            <button class="btn">
-                <img class="img" src="{% static 'img/shinee4.jpg' %}">
-                <div class="content">
-                    {{products.productName}}</br>
-                    {{products.price}}</br>
-                </div>
-            </button>
+            {% endfor %}
         </div>
-
         <div class="BEST">BEST ITEM</div>
     </div>
 
-    <div class="wrap2">
-        <div class="wrapper">
-            <button class="btn">
-                <img class="img" src="{% static 'img/shinee5.jpg' %}">
-                <div class="content">
-                    {{products.productName}}</br>
-                    {{products.price}}</br>
-                </div>
-            </button>
-
-            <button class="btn">
-                <img class="img" src="{% static 'img/shinee6.jpg' %}">
-                <div class="content">
-                    {{products.productName}}</br>
-                    {{products.price}}</br>
-                </div>
-            </button>
-
-            <button class="btn">
-                <img class="img" src="{% static 'img/shinee7.jpg' %}">
-                <div class="content">
-                    {{products.productName}}</br>
-                    {{products.price}}</br>
-                </div>
-            </button>
-
-            <button class="btn">
-                <img class="img" src="{% static 'img/shinee8.jpg' %}">
-                <div class="content">
-                    {{products.productName}}</br>
-                    {{products.price}}</br>
-                </div>
-            </button>
-        </div>
-
-        <div class="HURRY">HURRY UP!</div>
-    </div>
-
-    <div id="my-dialog">
-        <img class="dialog-img" src="{% static 'img/images.jpg' %}">
-        <div class="product-name">박예린</div>
-        <div class="price">1000원</div>
-        <div class="representative-order">대표주문자
-            <div class="representative-order-info">1학년 2반 김다은</div>
-            <div class="representative-order-fb">www.facebook.com/박예린</div>
-        </div>
-
-        <div class="notice">공지사항
-            <div class="notice-info">
-                5월 30일 주문예정입니다.</br>
-                최소 5명 주문 시 주문가능합니다.</br>
-                계좌이체 또는 직접 현금으로 주셔도 무관합니다.</br>
+        <div class="wrap2">
+            <div class="wrapper">
+                {% for product in products %}
+                <button class="btn">
+                    <img class="img" src="{% static {{product.img_path}} %}">
+                    <div class="content">
+                        {{product.productName}}</br>
+                        {{product.price}}</br>
+                    </div>
+                </button>
+                {% endfor %}
+                
             </div>
+
+            <div class="BEST">HURRY UP!</div>
         </div>
-        <button class="apply">공구참여하기</button>
-        <button class="cancel">취소하기</button>
-        <close class="close" id="btn-close-dialog">&times;</close>
-    </div>
 
-    <div id="dialog-background"></div>
+            <div id="my-dialog">
+                <img class="dialog-img" src="{% static 'img/images.jpg' %}">
+                <div class="product-name">박예린</div>
+                <div class="price">1000원</div>
+                <div class="representative-order">대표주문자
+                    <div class="representative-order-info">1학년 2반 김다은</div>
+                    <div class="representative-order-fb">www.facebook.com/박예린</div>
+                </div>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="{% static 'js/modal.js' %}"></script>
+                <div class="notice">공지사항
+                    <div class="notice-info">
+                        5월 30일 주문예정입니다.</br>
+                        최소 5명 주문 시 주문가능합니다.</br>
+                        계좌이체 또는 직접 현금으로 주셔도 무관합니다.</br>
+                    </div>
+                </div>
+                <button class="apply">공구참여하기</button>
+                <button class="cancel">취소하기</button>
+                <close class="close" id="btn-close-dialog">&times;</close>
+            </div>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="{% static 'js/common.js' %}"></script>
+            <div id="dialog-background"></div>
+
+            <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+            <script src="{% static 'js/modal.js' %}"></script>
+
+            <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+            <script src="{% static 'js/common.js' %}"></script>
 </body>
 
 </html>
