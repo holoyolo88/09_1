@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    {{products}}
     <div class="top-nav">
         <div class="search-container">
             <form action="/" method="post">
@@ -60,7 +59,7 @@
         <div class="wrapper">
             {% for product in products %}
             <button class="btn">
-                <img class="img" src="{{product.img_path }}">
+                <img class="img" src="{{product.img.url}}">
                 <div class="content">
                     {{product.productName}}</br>
                     {{product.price}}</br>
@@ -75,7 +74,7 @@
             <div class="wrapper">
                 {% for product in products %}
                 <button class="btn">
-                    <img class="img" src="{% static {{product.img_path}} %}">
+                    <img class="img" src="{% static '{{product.img.url}}' %}">
                     <div class="content">
                         {{product.productName}}</br>
                         {{product.price}}</br>

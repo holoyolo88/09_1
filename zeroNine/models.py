@@ -23,7 +23,7 @@ class Product(models.Model):
     #notice = models.TextField()
     site_name = models.CharField(max_length=128,default="")
     # image field
-    image = models.ImageField()
+    #image = models.ImageField()
     #img_path = models.CharField(max_length=128,default="")
     price = models.IntegerField(default=0)
     productType = models.BooleanField(default=False)
